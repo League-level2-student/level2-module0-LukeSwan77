@@ -27,9 +27,22 @@ public class _00_ArrayCheatSheet {
 			nums[i] = ran.nextInt();
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		
+		int smallestNumber = nums[0];
+		for (int i = 0; i < nums.length-1; i++) {
+			if(nums[i] < smallestNumber) {
+				smallestNumber = nums[i];
+			}
+		}
+		System.out.println(smallestNumber);
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
+		int largestNumber = nums[0];
+		for (int i = 0; i < nums.length-1; i++) {
+			if(nums[i] > largestNumber) {
+				largestNumber = nums[i];
+			}
+		}
+		System.out.println(largestNumber);
 	}
 }
